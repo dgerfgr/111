@@ -1,12 +1,18 @@
 # 111
 #include <iostream>
-#include <cstdio>
-bool marks[28];
-int main(){
-    marks['a'-'a']=marks['e'-'a']=marks['i'-'a']=marks['o'-'a']=marks['u'-'a']=true;
-    printf("请输入字母：");
-    char ch=getchar();
-    if(ch<='Z') ch+=32;
-    printf("%s",marks[ch-'a']?"是元音":"是辅音");
+using namespace std;
+ 
+int main()
+{
+    int n;
+ 
+    cout << "输入一个整数: ";
+    cin >> n;
+ 
+    if ( n % 2 == 0)
+        cout << n << " 为偶数。";
+    else
+        cout << n << " 为奇数。";
+ 
     return 0;
 }
